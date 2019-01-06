@@ -26,6 +26,10 @@ h2 {
     text-transform: capitalize;
 }
 
+h3 {
+    margin: 1rem 0;
+}
+
 img {
     display: block;
     width: 100%;
@@ -57,6 +61,18 @@ main {
     color: #888;
 }
 
+#landing-image {
+    background: url(https://source.unsplash.com/De8wMYoSSBc);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+
+}
+
 .btn {
     padding: 0.5rem 2rem;
     border: 1px solid #ccc;
@@ -66,8 +82,64 @@ main {
     text-decoration: none;
     color: #000;
     transition: background 500ms ease;
+
 }
 
 .btn:hover {
     background: #f4f4f4;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+
+}
+
+.caption {
+    padding: 0.8rem 1rem 1.4rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    line-height: 1.8rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Screen Sizes 500px and Up */
+@media(min-width:500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+@media(min-width:700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
 }
